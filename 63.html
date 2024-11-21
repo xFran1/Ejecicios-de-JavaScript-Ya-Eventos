@@ -12,11 +12,10 @@
 
  <script>
     document.getElementById("num").addEventListener("click",function(){
-       alert("entra")
         let num=document.getElementById("num");
-        let num_nuevo=Number(num.value);
-        num=num*2;
-        num.textContent=num;
+        let num_nuevo=Number(num.textContent);
+        num_nuevo=num_nuevo*2;
+        num.textContent=num_nuevo;
     })
  </script>
 </body>
