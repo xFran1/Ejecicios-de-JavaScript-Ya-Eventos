@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+    <div id="num">2</div>
+
+ <script>
+    document.getElementById("num").addEventListener("click",function(){
+       alert("entra")
+        let num=document.getElementById("num");
+        let num_nuevo=Number(num.value);
+        num=num*2;
+        num.textContent=num;
+    })
+ </script>
+</body>
+</html>

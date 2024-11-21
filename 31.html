@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input name="usuario">
+    <input name="clave" onblur="check(this)">
+
+    <script>
+        function check(num){
+            console.log(num.value.length)
+            if(num.value.length<7||num.value.length>20){
+                alert("La contraseña debe ser mayor que 6 y menor que 21")
+            }else{
+                alert("Contraseña valida")
+            }
+        }
+    </script>
+</body>
+</html>
