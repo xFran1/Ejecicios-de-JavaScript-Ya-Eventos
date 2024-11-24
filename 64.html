@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>Ejemplo de JavaScript</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #container{
-            
-        }
-    </style>
 </head>
+<style>
+    #container-rojo{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+</style>
 <body>
-    
-    <div id="container"></div>
+    <div id="container-rojo">
 
-
+    </div>
+   
     <script>
-        
+    document.getElementById("container-rojo").addEventListener("mousedown",function(){
+        let container_rojo=document.getElementById("container-rojo")
+        container_rojo.style.backgroundColor="yellow";
+    })
+    document.getElementById("container-rojo").addEventListener("mouseup",function(){
+        let container_rojo=document.getElementById("container-rojo")
+        container_rojo.style.backgroundColor="red";
+    })
     </script>
+
 </body>
+
 </html>

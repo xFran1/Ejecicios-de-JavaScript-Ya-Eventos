@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <input type="checkbox" id="activar">Acepta terminos y condiciones
+  <br><button id="boton" disabled>Aceptar</button>
+
+    <script>
+        document.getElementById("activar").addEventListener("click",function(){
+            let checkbox = document.getElementById("activar");
+            let boton = document.getElementById("boton")
+            if(checkbox.checked){
+                boton.disabled=false;
+            }else{
+                boton.disabled=true;
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
